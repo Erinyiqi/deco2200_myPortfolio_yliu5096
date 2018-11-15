@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Catalog</title>
+    <link rel="stylesheet" href="src/css/catalog.css">
+    <link rel="stylesheet" href="src/css/common.css">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/animate.css">
+    <script src="src/js/jquery.js"></script>
+    <script src="src/js/wow.min.js"></script>
+</head>
+
+<body>
+    <div id="catalogPage">
+        <div class="header-button-wrapper animated fadeInDown">
+            <a href="./index.html">
+                <div class=" header-button"></div>
+                <div class="burger-lines-wrapper">
+                    <div id="burger-close-wrap-0" class="burger-close-wrap oh">
+                    <div class="burger-close"></div>
+                    </div>
+                    <div id="burger-close-wrap-1" class="burger-close-wrap oh">
+                        <div class="burger-close"></div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+    <div id="locate-wrap">
+        <div id="burger-menu-bg-wrap" class="oh">
+            <div class="burger-menu-bg"><img class="burger-menu-bg-img" src="./src/img/index/background.jpg" alt=""></div>
+            <div class="burger-menu-bg"><img class="burger-menu-bg-img" src="./src/img/index/img-0.png" alt=""></div>
+            <div class="burger-menu-bg"><img class="burger-menu-bg-img" src="./src/img/index/img-1.png" alt=""></div>
+            <div class="burger-menu-bg"><img class="burger-menu-bg-img" src="./src/img/index/img-2.png" alt=""></div>
+            <div class="burger-menu-bg"><img class="burger-menu-bg-img" src="./src/img/index/img-3.png" alt=""></div>
+        </div>
+    </div>
+    <div class="catalog-menu-bg-wrap">
+        <ul class="catalog-menu-list wow">
+            <li class="catalog-menu-link-wrap oh animated fadeInUp"><a href="./index.html" class="catalog-menu-link">Home</a></li>
+            <li class="catalog-menu-link-wrap oh animated fadeInUp"><a href="./src/views/portfolio.html" class="catalog-menu-link">Portfolio </a></li>
+            <li class="catalog-menu-link-wrap oh animated fadeInUp"><a href="./src/views/bluey.html" class="catalog-menu-link">Process Journa </a></li>
+            <li class="catalog-menu-link-wrap oh animated fadeInUp"><a href="./src/views/mobile.html" class="catalog-menu-link">Contact </a></li>
+
+        </ul>
+    </div>
+    <script>
+    var wow = new WOW({
+        boxClass: 'wow',
+        animatedClass: 'animated',
+        offset: 1,
+        mobile: false,
+        live: true,
+    });
+    wow.init();
+
+    let lis = $('.catalog-menu-link-wrap')
+    let bgs = $('.burger-menu-bg')
+    // 初始动画
+    lis.each((i, item) => {
+        $(item).addClass("animated fadeInUp")
+    })
+    // 监听hover动画
+    lis.each((i, item) => {
+        $(item).hover(() => {
+            $(item).removeClass('fadeInUp').addClass("shake")
+            $(bgs[i]).addClass("zoomOut")
+        }, () => {
+            $(bgs[i]).removeClass("zoomOut")
+            $(item).removeClass('shake')
+        })
+    })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,394 @@
+    @font-face {
+        font-family: "source-serif-pro";
+        font-weight: 400;
+        font-style: normal;
+        src: url(../font/SourceSerifPro-Regular.woff2) format("woff2"), url(../font/SourceSerifPro-Regular.woff) format("woff")
+    }
+
+    @font-face {
+        font-family: trump-gothic-pro;
+        font-weight: 400;
+        font-style: normal;
+        src: url(../font/TrumpGothicPro.woff2) format("woff2"), url(../font/TrumpGothicPro.woff) format("woff")
+    }
+
+    @font-face {
+        font-family: goku;
+        font-weight: 400;
+        font-style: normal;
+        src: url(../font/Goku.woff2) format("woff2"), url(../font/Goku.woff) format("woff")
+    }
+
+    html {
+        -webkit-text-size-adjust: none;
+        -webkit-font-smoothing: subpixel-antialiased;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      background-color: #1b1a25;
+    }
+
+.cf:after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+.oh {
+    overflow: hidden
+}
+
+.hide {
+    opacity: 0;
+}
+
+/* button */
+.header-button-wrapper {
+    position: absolute;
+    float: right;
+    width: 54px;
+    height: 54px;
+    border: 1px solid red;
+    box-sizing: border-box;
+    cursor: pointer;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+}
+
+.header-button,
+.header-button:before,
+.header-button:after {
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0
+}
+
+.header-button:after,
+.header-button:before {
+    content: "";
+    background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+}
+
+.header-button:before {
+    transform: translate3d(0, 105%, 0);
+    opacity: 1
+}
+
+.header-button:after {
+    transition: transform .8s cubic-bezier(.165, .84, .44, 1);
+    transform: translate3d(0, -105%, 0);
+    opacity: 1;
+}
+
+.header-button-wrapper:hover .header-button:before {
+    transition: transform .7s cubic-bezier(.165, .84, .44, 1);
+    transform: translateZ(0);
+    opacity: 1
+}
+
+.header-button:after {
+    transition: transform .8s cubic-bezier(.165, .84, .44, 1);
+    transform: translate3d(0, -105%, 0);
+    opacity: 1
+}
+
+.header-button-wrapper:hover .header-button:after {
+    transition: none;
+    transform: translateZ(0);
+    opacity: 0
+}
+
+/* burger */
+
+#burger {
+    top: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+}
+
+#burger {
+    position: fixed;
+    z-index: 7000;
+}
+
+#burger-hover, #burger-hover:after, #burger-hover:before, #burger-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#burger-hover:before {
+    transform: translate3d(0,105%,0);
+    opacity: 0;
+}
+
+#burger-hover:after {
+    transition: transform .8s cubic-bezier(.165,.84,.44,1);
+    transform: translate3d(0,-105%,0);
+    opacity: 1;
+}
+
+#burger-hover:after, #burger-hover:before {
+    content: "";
+    background: linear-gradient(180deg,#ff3000,#ed0200,#ff096c,#d50082);
+}
+
+#burger-hover, #burger-hover:after, #burger-hover:before, #burger-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* button内容 */
+.burger-lines-wrapper {
+    position: absolute;
+    left: 14%;
+    top: 7%;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.burger-line-wrap-0 {
+    top: 26px;
+}
+
+.burger-line-wrap-1 {
+    top: 30px;
+}
+
+.burger-line-wrap-2 {
+    top: 34px;
+}
+
+.burger-line-wrap {
+    position: relative;
+    height: 1px;
+    left: 21px;
+    width: 18px;
+    background: #fff;
+}
+
+.burger-line-dark {
+    background: #fff;
+}
+
+.burger-line-light {
+    background: #3d3560;
+}
+
+.burger-line-hover {
+    background: #fff;
+    transform: translate3d(105%,0,0);
+    transition: transform .7s cubic-bezier(.165,.84,.44,1);
+}
+
+.burger-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translate3d(-100%,0,0);
+}
+
+/* 错误按钮 */
+#burger-close-wrap-0 {
+    transform: rotate(45deg);
+}
+
+#burger-close-wrap-1 {
+    transform: rotate(-45deg);
+}
+.burger-close-wrap {
+    position: absolute;
+    width: 1px;
+    height: 15px;
+    background: #fff;
+}
+
+/* 内容页介绍栏 */
+.introduce {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+/* 左侧头部 */
+.case-back {
+  height: 54px;
+  top: calc(4.166vw - 27px);
+  z-index: 1;
+  left: 0;
+}
+
+.case-back-line-wrap {
+  width: 40px;
+  position: absolute;
+  top: 27px;
+  left: 0;
+  height: 1px;
+}
+
+.case-back-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    opacity: .8;
+        z-index: 20;
+}
+
+.case-back-btn-wrap {
+  position: relative;
+  display: block;
+  color: #fff;
+  font-family: trump-gothic-pro;
+  font-size: calc(.6rem + .4vw);
+  letter-spacing: 2px;
+  left: 50px;
+  top: 20px;
+      z-index: 20;
+}
+
+/* 左图片 */
+.intro-l{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%
+}
+
+.intro-l-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: 50%;
+    background-image: url('../img/portfolio/bg.jpg')
+}
+
+.intro-l-img-wrap {
+    position: absolute;
+    top: 50%;
+    left: 10vw;
+    transform: translate3d(0,-46%,0);
+}
+.intro-l-img {
+    position: relative;
+    width: 300px;
+	height:560px;
+		
+}
+
+/* 右侧图片 */
+.intro-r {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    color: #3d3560;
+}
+
+.intro-r-txt {
+  position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.intro-r-txt-p-wrap {
+    text-align: left;
+
+}
+
+.intro-r-txt-title {
+   font-family: goku;
+    line-height: 120%;
+    letter-spacing: -1px;
+    font-size: calc(.7rem + 4.15vw);
+    color: #3d3560;
+}
+
+.intro-r-line-wrap {
+    position: relative;
+    margin: calc(11px + 1.3vw) 0 calc(7px + .9vw);
+    width: 6.77vw;
+    height: 4px
+}
+
+.intro-r-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #3d3560;
+}
+
+.intro-r-txt-p-wrap {
+    text-align: left
+}
+
+.intro-r-txt-p {
+    margin-top: calc(9px + 1.1vw);
+    color: #a3adb9;
+    line-height: 180%;
+    font-size: calc(.4rem + .58vw);
+}
+
+/* 灰色隔离层 */
+.team-wrap {
+    background: #f5f5f7;
+}
+
+.team {
+    padding: 7vw 0 4.8vw;
+    margin: auto;
+    width: 50vw;
+}
+.team-col {
+    float: left;
+    width: 33.333%;
+}
+.team-title {
+    padding: 0 0 .3vw;
+    font-family: trump-gothic-pro;
+    color: #181829;
+    letter-spacing: 1.6px;
+    font-size: calc(.4rem + .5vw);
+}
+.team-value {
+    padding: 0 0 1.8vw;
+    color: #a3adb9;
+    font-size: calc(.45rem + .4vw);
+    line-height: 180%;
+}

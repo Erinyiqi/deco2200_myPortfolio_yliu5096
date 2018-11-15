@@ -1,0 +1,200 @@
+#facebookPage {
+    position: relative;
+    z-index: 2;
+}
+
+#facebookPage .header-button-wrapper{
+    position: fixed;
+    right: 20px;
+    top: 25px;
+    z-index: 30;
+background: #171720;
+}
+
+#facebookPage .burger-lines-wrapper {
+    left: 67%;
+    top: 52%;
+}
+
+/* 双色层 */
+.double-team {
+  position: relative;
+}
+
+.double-team-wrapper {
+    position: relative;
+    z-index: 20;
+    margin: auto;
+    width: 83.33vw;
+    /* background-image: url("../img/facebook/img-0.png");
+    background-size: cover;
+    background-position: 50%; */
+}
+
+.double-team-wrapper .double-team-bg-wrapper {
+  position: absolute;
+  margin: 0 auto;
+}
+
+.double-team-bg {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.double-team-gray {
+  height: 270px;
+  background: #f5f5f7;
+}
+
+.double-team-white {
+  height: 270px;
+  background: #fff;
+}
+
+/* 手机层 */
+.facebook-mobile {
+    padding: 9vw 0 10vw;
+    background: #fff;
+}
+
+.f-mobile-txt{
+    margin: auto;
+    padding: 0 0 5.4vw;
+    width: 33.333vw;
+}
+
+#facebookPage h2 {
+    font-family: trump-gothic-pro;
+    font-size: calc(1rem + .9vw);
+    letter-spacing: 2px;
+    color: #49a4bf;
+}
+
+#facebookPage p {
+    margin-top: calc(.9px + 1.1vw);
+    color: #a3adb9;
+    line-height: 200%;
+    font-size: calc(.4rem + .58vw);
+}
+
+#f-mobile-img-wrapper {
+    margin: auto;
+    width: 50vw;
+}
+
+#f-mobile-img-l {
+    position: relative;
+    float: left;
+    width: 22.81vw;
+    height: 42.6vw;
+}
+
+#f-mobile-img-r {
+    position: relative;
+    float: right;
+    margin: 4vw 0 0;
+    width: 22.81vw;
+}
+
+.f-mobile-img {
+  max-width: 100%;
+}
+/* 方块层 */
+#f-seamless {
+    position: relative;
+    background: #fff;
+}
+
+#f-seamless-content {
+    margin: auto;
+    padding: 7.6vw 0 12.5vw;
+    width: 66.66vw;
+}
+#f-seamless-content-txt {
+    padding: 13.23vw 0 0;
+    float: left;
+    width: 22.4vw;
+}
+
+#f-seamless-content-img {
+    float: right;
+    width: 33.23vw;
+    height: 41.3vw;
+}
+
+/* 四图层 */
+#f-desktop-imgs-wrap {
+    padding: 8.85vw 0 11.98vw;
+    background: #f5f6f7;
+}
+
+#f-desktop-imgs {
+    margin: auto;
+    width: 83.333vw;
+}
+
+#f-desktop-imgs-last {
+    padding: 7.5vw 0 0;
+}
+
+#f-desktop-imgs img {
+    width: 39.48vw;
+}
+
+#f-desktop-imgs .f-desktop-right{
+  float: right;
+}
+
+#f-desktop-imgs .f-desktop-left{
+  float: left;
+}
+
+/* 参差排列层  */
+#f-early {
+    position: relative;
+    padding: 12.29vw 0 0;
+    background: #fff;
+}
+
+#f-early-top {
+    margin: auto;
+    width: 83.333vw;
+}
+
+#f-early-top-img {
+    float: left;
+    width: 45.8333vw;
+}
+
+#f-early-top-txt {
+    float: right;
+    box-sizing: border-box;
+    padding: 5.52vw 5.729vw 0 0;
+    width: 33.333vw;
+}
+
+#f-early-bottom {
+    position: relative;
+    z-index: 2;
+    margin: auto;
+    padding: 4.48vw 0 0;
+    width: 50vw;
+}
+
+#f-early-bottom-l {
+    float: left;
+    width: 22.81vw;
+}
+
+#f-early-bottom-l img {
+    padding: 17.55vw 0 0;
+}
+
+#f-early-bottom-r {
+    float: right;
+    width: 22.81vw;
+}
+
+#f-early-bottom-r img:last-child {
+    padding: 4.69vw 0 0;
+}

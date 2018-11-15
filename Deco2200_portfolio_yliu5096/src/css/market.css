@@ -1,0 +1,420 @@
+#marketPage {
+  background: #161616;
+}
+
+#marketPage .intro-l-bg{
+ background-image: ('../img/portfolio/img-0.jpg')
+
+}
+
+#marketPage .header-button-wrapper{
+    position: fixed;
+    right: 20px;
+    top: 25px;
+    z-index: 30;
+    background: #171720;
+}
+
+#marketPage .burger-lines-wrapper {
+    left: 67%;
+    top: 52%;
+}
+
+#marketPage .intro-l-img-wrap {
+    position: absolute;
+    top: 50%;
+    left: 12vw;
+    transform: translate3d(0,-50%,0);
+}
+
+#marketPage .intro-l-img {
+    width: 20vw;
+}
+
+#marketPage h2 {
+    font-family: trump-gothic-pro;
+    font-size: calc(.7rem + .8vw);
+    letter-spacing: .9px;
+    color: #49a4bf;
+}
+
+#marketPage p {
+   margin-top: calc(9px + 1.1vw);
+    color: #a3adb9;
+    line-height: 180%;
+    font-size: calc(.4rem + .58vw);
+}
+
+/* 大图展示层  */
+
+.double-team {
+  position: relative;
+}
+
+.double-team-wrapper {
+    position: relative;
+    z-index: 20;
+    margin: auto;
+    width: 83.33vw;
+    /* background-image: url("../img/facebook/img-0.png");
+    background-size: cover;
+    background-position: 50%; */
+}
+
+.double-team-wrapper .double-team-bg-wrapper {
+  position: absolute;
+  margin: 0 auto;
+}
+
+.double-team-bg {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.double-team-gray {
+  height: 270px;
+  background: #f5f5f7;
+}
+
+.double-team-white {
+  height: 270px;
+  background: #fff;
+}
+#m-film-wrap {
+    background: #fff;
+}
+
+.film-top-wrap {
+    position: relative;
+}
+
+#m-overview-title, #m-overview-txt {
+    width: 41.66vw;
+    margin: auto;
+	
+}
+
+#m-overview-txt {
+    padding: 0 0 4.4vw;
+    margin: auto;
+}
+
+#m-film-wrap .film-top {
+    height: 46.875vw;
+}
+
+#overview-img {
+    width: 1024px;
+}
+
+#overview-img {
+    margin: auto;
+}
+
+#overview-img img{
+  width: 100%;
+}
+
+.film-top {
+    position: relative;
+    z-index: 2;
+    margin: auto;
+    width: 83.33vw;
+}
+
+.film-cover, .film-cover-bg-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.film-cover-bg {
+  height: 100%;
+  background-image: url(../img/market/img-2.jpg);
+    background-position: 50%;
+    background-size: cover;
+}
+/* 手机展示层 */
+#m-overview {
+    padding: 7vw 0;
+    background: #fff;
+}
+/* 产品展示层 */
+#m-product-wrap {
+    position: relative;
+    padding: 0 0 10.4vw;
+    background: #fff;
+}
+
+#m-product-line {
+    margin: auto;
+    width: 83.33vw;
+    height: 1px;
+    background: #e5e5e5;
+}
+
+#m-product-img-right {
+    position: absolute;
+    top: 1px;
+    right: 8.7vw;
+    width: 34.02vw;
+}
+
+#m-product {
+    padding: 9.375vw 0 0 16.66vw;
+    width: 29.166vw;
+}
+
+#m-product-img {
+    margin: 1.9vw 0 2.4vw -.9vw;
+    width: 18.26vw;
+}
+
+.m-product-li {
+    position: relative;
+    padding: 0 0 1.4vw;
+    height: 24px;
+}
+
+/* account账户层 */
+#m-account-wrap {
+    position: relative;
+    padding: 10vw 0;
+    background: #fff;
+}
+
+#m-account-img-left-wrap {
+    position: absolute;
+    top: 0;
+    left: 8.33vw;
+}
+
+#m-account-img-left {
+    width: 38.12vw;
+}
+
+#m-account-img-left-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 37.76vw;
+    height: 1px;
+    background: #e5e5e5;
+}
+
+#m-account {
+    padding: 0 0 0 54.166vw;
+    width: 29.166vw;
+}
+
+/* coupons优惠券层 */
+#m-coupons-wrap {
+    position: relative;
+    padding: 9.8vw 0 13vw;
+    background: #fff;
+}
+
+#m-coupons-img-right-wrap {
+    position: absolute;
+    right: 8.333vw;
+    width: 41.66vw;
+    height: 31.25vw;
+    transform: translate3d(0,-50%,0);
+}
+
+#m-coupons-img-right {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/market/img-7.gif);
+    background-size: 93%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    border: 16px solid #f5f5f7;
+}
+
+#m-coupons {
+    padding: 0 0 0 16.66vw;
+    width: 29.166vw;
+}
+
+.m-coupons-list {
+    float: left;
+    margin: 2.15vw 0 0;
+    width: 13.5vw;
+}
+
+.m-coupons-li {
+    position: relative;
+    float: left;
+    margin: 1.15vw 0 0;
+    width: 13.5vw;
+}
+
+.m-coupons-li-txt {
+    float: left;
+    margin: 0 0 0 48px;
+    line-height: 36px;
+    color: #a3adb9;
+    font-size: calc(.4rem + .58vw);
+}
+
+/* campaign竞争层 */
+#m-picto {
+    position: relative;
+    background: #fff;
+}
+
+#m-picto-campaign-wrap {
+    position: relative;
+    padding: 6.5vw 0 11.72vw;
+}
+
+#m-picto-img img {
+  width: 100%;
+    height: auto;
+}
+
+#m-picto-campaign-wrap {
+    position: relative;
+    padding: 6.5vw 0 11.72vw;
+}
+
+#m-picto-campaign-img-top {
+    position: absolute;
+    top: -4vw;
+    right: 8.333vw;
+    width: 35.27vw;
+}
+
+#m-picto-campaign {
+    padding: 0 0 0 16.66vw;
+    width: 30.73vw;
+}
+
+#m-picto-campaign-img {
+    margin: 2.8vw 0 0 -.5vw;
+    width: 9.95vw;
+}
+
+#m-picto-line-bottom, #m-picto-line-top {
+    position: absolute;
+    left: 4.166vw;
+    right: 4.166vw;
+    height: 1px;
+    background: #aaa;
+    opacity: .3;
+}
+
+#m-picto-line-top {
+    top: 4.166vw;
+}
+
+#m-picto-line-bottom {
+    bottom: 4.166vw;
+}
+
+#m-picto-line-left, #m-picto-line-right {
+    position: absolute;
+    top: 4.166vw;
+    bottom: 4.166vw;
+    width: 1px;
+    background: #aaa;
+    opacity: .3;
+}
+
+#m-picto-line-left {
+    left: 4.166vw;
+}
+
+#m-picto-line-right {
+    right: 4.166vw;
+}
+
+/* restaurant */
+#m-restaurant-wrap {
+    position: relative;
+    padding: 17vw 0 17.2vw;
+    background: #fff;
+}
+
+#m-restaurant-img-wrap {
+    position: absolute;
+    top: 10%;
+    left: 8.33vw;
+    width: 48vw;
+    transform: translate3d(0,-50%,0);
+}
+
+#m-restaurant-img {
+    width: 100%;
+}
+
+#m-restaurant {
+    padding: 0 0 0 58.33vw;
+    width: 27vw;
+}
+
+/* illustration */
+#m-illustration-wrap {
+    background: #fff;
+}
+
+#m-illustration {
+    position: relative;
+    z-index: 2;
+    margin: auto;
+    width: 33.33vw;
+}
+
+#m-illustration-img {
+    margin: 5.2vw 0 0 -2vw;
+    width: 34.25vw;
+}
+/* last */
+#m-behance-wrap {
+    position: relative;
+    z-index: 1;
+    height: 16.2vw;
+    background: #f5f5f7;
+}
+
+#m-behance {
+    width: 290px;
+    height: 44px;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+
+#m-behance-btn-wrap {
+    width: 290px;
+    height: 44px;
+    line-height: 44px;
+}
+
+#m-behance-btn-wrap {
+  width: 100%;
+  height: 100%;
+    position: relative;
+    text-align: center;
+}
+
+#m-behance-btn {
+    z-index: 1;
+    box-sizing: border-box;
+    font-family: trump-gothic-pro;
+    color: #181829;
+    letter-spacing: 1.6px;
+    transition: color .6s cubic-bezier(.165,.84,.44,1);
+    border: 1px solid #89c58f;
+}
+
+#m-behance-btn, #m-behance-btn-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
